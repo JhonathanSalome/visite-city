@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!-- html foca em semântica, que é o significado das coisas -->
+<html lang="pt-br"> <!-- caracter em latino -->
+<head> <!-- cabeça(configurações comportamentais) -->
+    <meta charset="UTF-8"> <!-- charset é conjunto de caracteres latino -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- faz uma ligação entre o file html eo css, link parâmetro rel(for falar qual é a categoria the file que está sendo linkando) como stysheet(folha de estilo), type(modelo, tipo) como text(texto)/css, href(hypertext reference, referência de hipertexto) qual file será carregado -->
+    <title>Visite</title> <!-- título da página -->
+</head>
+<body> <!-- corpo -->
+    <header> <!-- header(cabeçalho) principal do site -->
+        <nav>
+            <a href="">Home</a> <!-- a(âncora) href(referência hipertexto)=" " target(que é alvo)="_blank(abre uma nova guia, link externo) ou _self(value padrão)" -->
+            <a href="">Informções</a>
+            <a href="">Fale Conosco</a>
+        </nav>
+    </header>
+    
+    <main class="container"> <!-- main div principal, with class(classe), conteiner(name the class) -->
+        <div class="list"> <!-- div(área de divisão da página, onde vai fica os items), class(classe), list(name the list) -->
+            <div class="list-item"> <!-- div(área de divisão da página), class(classe) list-item(name the class, item por item the list) -->
+                <img src="./img/img1.jpg" alt="foto-cidade"> <!-- id com icone, src(source, origem) é o caminho da image, lembrando carrega o tamanho normal do file -->
+                <div class="content"> <!-- div(box vazia class(classe) content(name the class) colocar items de texto for manipulação -->
+                    <h2 class="title">Bali</h2>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus aspernatur repellendus consectetur debitis perferendis perspiciatis non corrupti, inventore autem maiores ab officia cupiditate, quisquam qui sed error! Voluptatem, dignissimos.</p>
+                    <div class="buttons"> <!-- div, buttons class(classe) buttons(name the button) -->
+                        <button>Sabia Mais</button>
+                        <button>Acessar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="list-item"> <!-- div(área de divisão da página), class(classe) list-item(name the class, item por item the list) -->
+                <img src="./img/img2.jpg" alt="foto-cidade"> <!-- id com icone, src(source, origem) é o caminho da image, lembrando carrega o tamanho normal do file -->
+                <div class="content"> <!-- div(box vazia class(classe) content(name the class) colocar items de texto for manipulação -->
+                    <h2 class="title">Paris</h2>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus aspernatur repellendus consectetur debitis perferendis perspiciatis non corrupti, inventore autem maiores ab officia cupiditate, quisquam qui sed error! Voluptatem, dignissimos.</p>
+                    <div class="buttons"> <!-- div, buttons class(classe) buttons(name the button) -->
+                        <button>Sabia Mais</button>
+                        <button>Acessar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="list-item"> <!-- div(área de divisão da página), class(classe) list-item(name the class, item por item the list) -->
+                <img src="./img/img3.jpg" alt="foto-cidade"> <!-- id com icone, src(source, origem) é o caminho da image, lembrando carrega o tamanho normal do file -->
+                <div class="content"> <!-- div(box vazia class(classe) content(name the class) colocar items de texto for manipulação -->
+                    <h2 class="title">Roma</h2>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus aspernatur repellendus consectetur debitis perferendis perspiciatis non corrupti, inventore autem maiores ab officia cupiditate, quisquam qui sed error! Voluptatem, dignissimos.</p>
+                    <div class="buttons"> <!-- div, buttons class(classe) buttons(name the button) -->
+                        <button>Sabia Mais</button>
+                        <button>Acessar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="list-item"> <!-- div(área de divisão da página), class(classe) list-item(name the class, item por item the list) -->
+                <img src="./img/img4.jpg" alt="foto-cidade"> <!-- id com icone, src(source, origem) é o caminho da image, lembrando carrega o tamanho normal do file -->
+                <div class="content"> <!-- div(box vazia class(classe) content(name the class) colocar items de texto for manipulação -->
+                    <h2 class="title">Veneza</h2>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus aspernatur repellendus consectetur debitis perferendis perspiciatis non corrupti, inventore autem maiores ab officia cupiditate, quisquam qui sed error! Voluptatem, dignissimos.</p>
+                    <div class="buttons"> <!-- div, buttons class(classe) buttons(name the button) -->
+                        <button>Sabia Mais</button>
+                        <button>Acessar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumb">
+            <div class="thumb-item">
+                <img src="./img/img1.jpg" alt="foto-cidade">
+                <div class="content">
+                    <h3>Bali</h3>
+                    <p>Visite Bali</p>
+                </div>
+            </div>
+
+
+            <div class="thumb-item">
+                <img src="./img/img2.jpg" alt="foto-cidade">
+                <div class="content">
+                    <h3>Paris</h3>
+                    <p>Visite Paris</p>
+                </div>
+            </div>
+
+
+            <div class="thumb-item">
+                <img src="./img/img3.jpg" alt="foto-cidade">
+                <div class="content">
+                    <h3>Roma</h3>
+                    <p>Visite Roma</p>
+                </div>
+            </div>
+
+
+            <div class="thumb-item">
+                <img src="./img/img4.jpg" alt="foto-cidade">
+                <div class="content">
+                    <h3>Veneza</h3>
+                    <p>Visite Veneza</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button class="back"> < </button>
+            <button class="next"> > </button>
+        </div>
+
+    </main>
+    <script src="./scripts.js"></script>
+</body>
+</html>

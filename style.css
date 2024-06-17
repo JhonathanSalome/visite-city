@@ -1,0 +1,269 @@
+* { /* resetando, *(signitica tudo) */
+    margin: 0; /* margin, de todo mundo */
+    padding: 0; /* pedding */
+    box-sizing: border-box; /* box-sizing(dimensionamento de caixa), border(fronteira) */
+    text-decoration: none; /* linha que fica de baixo dos links */
+    font-family: "Poppins", sans-serif; /* style the font */
+}
+
+body{ /* configure body */
+    background-color: #000; /* cor de fundo */
+    color: #eee;
+    font-size: 12px; /* tamanho da fonte */
+}
+
+header{ /* configure header */
+    width: 80%;
+    height: 50px;
+    display: flex; /* mostrar */
+    align-items: center; /* alinhar itens */
+    position: relative; /* position(posição), relative(relativa) */
+    z-index: 2; /* define a posição do elemento */
+    margin: auto; /* margem */ 
+}
+
+header a{ /* configure a(link) dentro do header */
+    color: #eee; /* cor */
+    margin-right: 40px; /* margem direita */
+    font-weight: 300; /* espessura da fonte */
+}
+
+.container{ /* configure .(ponto, porque é class) container(name the container) */
+    height: 100vh; /* altura, 100vh(tela interia, divide em 100 partes de altura) */
+    width: 100vw; /* largura, 100vw(tela interia, divide em 100 partes de largura) */
+    margin-top: -50px; /* , ou seja, puxa o container */
+    overflow: hidden; /* overflow(transbordar), hidden(escondida) */
+}
+
+.container .list .list-item{ /* container(name the container), configure list-item, dentro do container, procure um list, and dentro desse list, procure um list-item, .(ponto, and class) */
+    width: 100%; /* */
+    height: 100%; /* */
+    position: absolute; /* posição absoluta */
+}
+
+.container .list .list-item img{ /* container(name the container), configure list-item, dentro do container, procure um list, and dentro desse list, procure um list-item, procure uma img(imagem) .(ponto, and class) */
+    object-fit: cover; /* object-fit(vai determinar with o object vai encaixar na screen), cover(cober a screen toda) */
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%); /* filter(filtro), brightness(tira um pouco da claridade, um pouco mais escuro) */
+}
+
+.container .list .list-item .content{ /* container(name the container), configure list-item, dentro do container, procure um list, and dentro desse list, procure um list-item, procure content(os texts) .(ponto, and class) */
+    position: absolute; /* posição absuluta */
+    top: 20%; /* descer */
+    right: 10%; /* afastar lado esquerdo */
+    padding-right: 30%; /* distanciar */
+    width: 80%; /* largura */
+    color: #eee; /* cor */
+    text-shadow: 0 5px 10px #0004; /* sombra */
+}
+
+.container .list .list-item .title{ /* container(name the container), configure list-item, dentro do container, procure um list, and dentro desse list, procure um list-item, procure title(título) .(ponto, and class) */
+    font-size: 5em; /* tamanho da fonte */
+    font-weight: 700; /* espessura da fonte */
+    line-height: 1.3em;/* altura da row */
+}
+
+.container .list .list-item .description{ /* container(name the container), configure list-item, dentro do container, procure um list, and dentro desse list, procure um list-item, procure description(do p) .(ponto, and class) */
+    font-size: 1.2em;
+}
+
+.container .list .list-item .buttons{ /* container(name the container), configure list-item, dentro do container, procure um list, and dentro desse list, procure um list-item, procure buttons(the botões) .(ponto, and class) */
+    display: grid; /* cria espaços */
+    grid-template-columns: repeat(2, 130px);/* quanto vai ter as coluns, repeat(as coluns vai ser igual), 2(two coluns), 130px(tamanho da column) */
+    grid-template-rows: 40px;/* define altura dessa row */
+    margin-top: 20px; /* margem superior */
+    gap: 5px; /* distanciar os items */
+}
+
+.container .list .list-item .buttons button{ /* container(name the container), configure list-item, dentro do container, procure um list, and dentro desse list, procure um list-item, procure buttons(the botões, porém o botão em si) .(ponto, and class) */
+    border: none; /* tirar a bordar */
+    background-color: #eee; /* cor de fundo */
+    letter-spacing: 3px; /* distanciar as letras */
+    font-weight: 500; /*  */
+    cursor: pointer; /* ficar a mão */
+    text-transform: uppercase; /* todo em maiusculo */
+}
+
+.container .list .list-item .buttons button:hover{ /* container(name the container), configure list-item, dentro do container, procure um list, and dentro desse list, procure um list-item, procure buttons(the botões, porém o botão em si) .(ponto, and class) :(selecionar apenas uma criança determinada), hover(passar o mouse em cima do button) */
+    background-color: transparent; /* cor de fundo */
+    border: 1px solid #eee; /* tamanho da borda, borda solida, cor da borda */
+    color: #eee; /* cor */
+    transition: 0.7s; /* transição */
+}
+
+.container .list .list-item .buttons button:nth-child(2){ /* container(name the container), configure list-item, dentro do container, procure um list, and dentro desse list, procure um list-item, procure buttons(the botões, porém o botão em si) .(ponto, and class) :(selecionar apenas uma criança determinada), 2(segundo botão) */
+    background-color: transparent; /* cor de fundo */
+    border: 1px solid #eee; /* tamanho da borda, borda solida, cor da borda */
+    color: #eee; /* cor */
+}
+
+
+.container .list .list-item .buttons button:nth-child(2):hover{ /* container(name the container), configure list-item, dentro do container, procure um list, and dentro desse list, procure um list-item, procure buttons(the botões, porém o botão em si) .(ponto, and class) :(selecionar apenas uma criança determinada), 2(segundo botão), hover(passar o mouse em cima do button) */
+    background-color: #eee; /* cor de fundo */
+    color: #000; /* cor */
+}
+
+.container .thumb{ /* configure .(ponto, porque é class) container(name the container) .(ponto, and class) thumb(imagem smal) */
+    position: absolute; /* posição absoluta */
+    bottom: 50px; /* fundo */
+    left: 50%; /* esquerda */
+    display: flex; /* mostrar */
+    gap: 20px; /* gab(brecha), distanciar os items */
+}
+
+.container .thumb .thumb-item{ /* configure .(ponto, porque é class) container(name the container) .(ponto, and class) thumb(imagem smal), thumb-item(items the imagens smal) */
+    width: 135px; /* largura */
+    height: 200px; /* altura */
+    position: relative; /* posição relativa */
+    z-index: 3;
+}
+
+.container .thumb .thumb-item img{ /* configure .(ponto, porque é class) container(name the container) .(ponto, and class) thumb(imagem smal), thumb-item(items the imagens smal), img(imagem) */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* object-fit(vai determinar with o object vai encaixar na screen), cover(cober a screen toda) */
+    border-radius: 10px; /* borda redonda */
+    filter: brightness(80%); /* filter(filtro), brightness(tira um pouco da claridade, um pouco mais escuro) */
+}
+
+.container .thumb .content{ /* configure .(ponto, porque é class) container(name the container) .(ponto, and class) thumb(imagem smal), content() */
+    position: absolute;
+    bottom: 10px; /* fundo */
+    left: 10px;
+}
+
+.container .arrows{ /* configure .(ponto, porque é class) container(name the container), arrows(configure button) */
+    display: flex; /* cria espaços */
+    align-items: center; /* alinhar itens */
+    gap: 10px; /* gab(brecha), distanciar os items */
+    position: absolute; /* posição absoluta */
+    bottom: 120px; /* fundo */
+    left: 120px; /*  */
+    width: 300px; /*  */
+}
+
+.container .arrows button{ /* configure .(ponto, porque é class) container(name the container), arrows(configure button), button(botão) */
+    border-radius: 10px; /*  */
+    border: none; /* não vai ter borda */
+    padding: 12px 17px; /* 12px(em cima, em baixo), 17px(laterais) */
+    background-color: #eee4;
+    color: #eee;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.container .arrows button:hover{ /* configure .(ponto, porque é class)container(name the container), arrows(), button(botão) */
+    background-color: #eee;
+    color: #000;
+    transition: 0.7s;
+}
+
+/* movimento the thumb(the thumb), animação the capa */
+
+/* create animation, quem ele vai movimentar */
+.container.next .thumb{ /* só vai chamar quando o container tiver a class next, porém só vai movimentar a thumb */
+    animation: effectNextThumb 0.5s linear 1 forwards; /* animation(animação), qual keyframes que vai ser utilizado(name the effectNextThumb), quanto time vai dura a animação(0,5 segundos), a animação vai ser linemar(linear type the animation), quantidade de reptição(no caso é 1), vai começar a animation, vai chegar no ponto final and vai ficar lá(forwards, para a frente) */
+}
+
+@keyframes effectNextThumb { /* @keyframes(são como o roteiro de uma animação em CSS. Eles permitem criar sequências de animação, especificando como um elemento deve se comportar em diferentes estágios da animação) effectNextThumb(name the keyframes) */
+    from { /* from(de, é estado inicial), quando começa a animation */
+        transform: translateX(150px); /* transform(transformar), translateX(traduzirX, vai movimentar algo no eixo x the 150px) */
+    }
+}
+
+/* movimento última Thumb */
+
+.container.next .thumb .thumb-item:nth-last-child(1){ /* só vai chamar quando o container tiver a class next, porém só vai movimentar a thumb, só a última thumb, nth-last-child(o último thumb, começa de traz para frente) */
+    animation: effectLastThumb 0.5s linear 1 forwards; /* animation(animação), qual keyframes que vai ser utilizado(name the effectLastThumb), quanto time vai dura a animação(0,5 segundos), a animação vai ser linemar(linear type the animation), quantidade de reptição(no caso é 1), vai começar a animation, vai chegar no ponto final and vai ficar lá(forwards, para a frente) */
+}
+
+@keyframes effectLastThumb { /* @keyframes(são como o roteiro de uma animação em CSS. Eles permitem criar sequências de animação, especificando como um elemento deve se comportar em diferentes estágios da animação) effectLastThumb(name the keyframes) */
+    from { /* from(de, é estado inicial) só vai fazer o efeito no começo */
+        width: 0;
+        opacity: 0; /* transparência */
+    }
+}
+
+/* texts principais */
+
+.container .list .list-item:nth-last-child(1) .content .title,
+.container .list .list-item:nth-last-child(1) .content .description,
+.container .list .list-item:nth-last-child(1) .content .buttons
+{ /* .(ponto, and class) configure container(name the class), list(list), list-item(list the items), dentro do container, procure um list, and dentro the list, procure um list-item, nth-last-child(último) 1(apenas um), content(o que dentro de content) buttons(botão) */
+
+    /* quando animation começa, quando animation and chamada */
+    transform: translateY(50px); /* "posição inicial", transform(transformar), translateY(traduzirY) no eixo Y, in 50 pixes */
+    filter: blur(20px); /* filter(filtro) blur(borrão), ou seja, efeito de blor */
+    opacity: 0; /* opacity(opacidade
+    ) */
+    animation: showContent 0.5s 1s linear 1 forwards; /* animation(animação), qual keyframes que vai ser utilizado(name the showContent), quanto time vai dura a animação(0,5 segundos), 1s(delay), a animação vai ser linemar(linear type the animation), quantidade de reptição(no caso é 1), vai começar a animation, vai chegar no ponto final and vai ficar lá(forwards, para a frente) */
+}
+
+/* "posição final", reverter tudo o que está em cima, contéudo inteiro que ele vai mostrar */
+
+@keyframes showContent { /* @keyframes(são como o roteiro de uma animação em CSS. Eles permitem criar sequências de animação, especificando como um elemento deve se comportar em diferentes estágios da animação) showContent(name the keyframes, contéudo inteiro que ele vai mostrar) */
+    to { /* to(fazer, é estado final) */
+
+        transform: translateY(0); /* "posição inicial", transform(transformar), translateY(traduzirY) no eixo Y, in 0 */
+        filter: blur(0); /* filter(filtro) blur(borrão), ou seja, efeito de blor */
+        opacity: 1; /* opacity(opacidade
+        ) */
+    } 
+}
+
+.container .list .list-item:nth-last-child(1) .content .title{ /* .(ponto, and class) configure container(name the class), list(list), list-item(list the items), dentro do container, procure um list, and dentro the list, procure um list-item, nth-last-child(último) 1(apenas um), content(o que dentro de content) title(título) */
+    animation-delay: 1.0s;
+}
+
+.container .list .list-item:nth-last-child(1) .content .description{ /* .(ponto, and class) configure container(name the class), list(list), list-item(list the items), dentro do container, procure um list, and dentro the list, procure um list-item, nth-last-child(último) 1(apenas um), content(o que dentro de content) description(texts) */
+    animation-delay: 1.3s;
+}
+
+.container .list .list-item:nth-last-child(1) .content .buttons
+{ /* .(ponto, and class) configure container(name the class), list(list), list-item(list the items), dentro do container, procure um list, and dentro the list, procure um list-item, nth-last-child(último) 1(apenas um), content(o que dentro de content) buttons(botão) */
+    animation-delay: 1.7s;
+}
+
+/* inicial, expande a imagem principal "next" */
+.container.next .list .list-item:nth-last-child(1) img{ /* .(ponto, and class) container(class) só vai mexer se for o next(class), list(list), list-item(list the items), dentro do container, procure um list, and dentro the list, procure um list-item, nth-last-child(último) 1(apenas um), img(imagem) */
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showMainImage 0.5s linear 1 forwards; /* animation(animação), qual keyframes que vai ser utilizado(name the showMainImage), quanto time vai dura a animação(0,5 segundos), a animação vai ser linemar(linear type the animation), quantidade de reptição(no caso é 1), vai começar a animation, vai chegar no ponto final and vai ficar lá(forwards, para a frente) */
+}
+
+/* final, expande a imagem principal */
+@keyframes showMainImage { /* @keyframes(são como o roteiro de uma animação em CSS. Eles permitem criar sequências de animação, especificando como um elemento deve se comportar em diferentes estágios da animação) showMainImage(name the keyframes, contéudo inteiro que ele vai mostrar) */
+    to { /* to(para), final */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+/* começa, imagem principal "back" */
+.container.back .list .list-item:nth-child(1) img{ /* .(ponto, and class) container(class) só vai mexer se for o back(class), list(list), list-item(list the items), dentro do container, procure um list, and dentro the list, procure um list-item, nth-last-child(último) 1(apenas um), img(imagem) */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: hideMainImage 0.5s linear 1 forwards; /* animation(animação), qual keyframes que vai ser utilizado(name the hideMainImage), quanto time vai dura a animação(0,5 segundos), a animação vai ser linemar(linear type the animation), quantidade de reptição(no caso é 1), vai começar a animation, vai chegar no ponto final and vai ficar lá(forwards, para a frente) */
+    z-index: 1; /*  */
+}
+
+/* esconder a imagem principal */
+@keyframes hideMainImage { /* @keyframes(são como o roteiro de uma animação em CSS. Eles permitem criar sequências de animação, especificando como um elemento deve se comportar em diferentes estágios da animação) hideMainImage(name the keyframes, contéudo inteiro que ele vai mostrar) */
+    to { /* to(para), ternima */
+        width: 135px;
+        height: 200px;
+        border-radius: 10px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
